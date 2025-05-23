@@ -8,20 +8,31 @@
     <style>
         /* backrong image and animation */
         body {
-              background-color: blueviolet;  
-              background-image: url("https://images.app.goo.gl/qyuJwWrrgFMzBktGA");  
+            background-color: blueviolet;
+            background-image: url("https://images.app.goo.gl/qyuJwWrrgFMzBktGA");
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
             background-position: left;
 
-            background:linear-gradient(to right,blueviolet,blue,green)
+            background: linear-gradient(to right, blueviolet, blue, green
+            }
 
-        }
-        .diganth{
-            width 
+            @keyframes adanimation {
+                0% {background-color: burlywood;}
+                50% {background-color: blueviolet;}
+                75% {background-color: blue;}
 
-        }
+            }
+            
+            .diganth {
+                width: 480px;
+                height: 340px;
+                background-color: aqua;
+                animation: adanimation;
+                animation-duration: 5s;
+
+            }
     </style>
 
 </head>
