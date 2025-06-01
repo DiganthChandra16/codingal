@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        .class1 {
+            position: static;
+            top:100px;
+            left: 400px; 
+        }
+        .class2 {
+            position: fixed;
+            top: 0%;
+            left: 100px;
+
+        }
+        .class3 {
+            /* relative = static + non static */
+            position: relative;
+            top: 0%;
+            left: 200px;
+        }
+        .class5 {
+            position: relative;
+        }
+        .class4 {
+            position: absolute;
+            top: 0px;
+        }
+        .class6 {
+            position: sticky;
+            top: 80px;
+        }
+            
+    </style>
+</head>
+<body>
+  <h1 class="class1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, excepturi quidem!</h1>
+  <p class="class2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+  <p class="class3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae ipsum vitae tempora nobis nulla nam neque, dolore iusto ullam doloribus aspernatur?</p>
+  <div class="class5">
+    <p class="class4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, saepe possimus. Ab.</p>
+    </div>
+    <p class="class6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+    
+</body>
+</html>
