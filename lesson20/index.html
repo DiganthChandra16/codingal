@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myfunction(5)">button</button>
+
+    <script>
+        function myfunction(x) 
+        {
+            document.write(x+x)
+        }
+    </script>
+    <p>a function can access variable defined inside the function</p>
+    <button type="button" onclick="myfunction2()">Click me</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        var b = 5;
+        function myfunction() {
+            var a = 4;
+            document.getElementById("demo").innerHTML = a + b;
+        }
+        document.getElementById("demo1").innerHTML = a;
+        document.getElementById("demo2").innerHTML = b;  
+    </script>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores optio esse.</p>
+    <p id="demo"></p>
+    <script>
+        function myfunction(x,y) {
+            if (y === undefined) {
+                y = 2;
+            }
+            return x*y
+        }
+        document.getElementById("demo").innerHTML = myfunction(5);
+        </script>
+        
+    </script>
+    
+</body>
+</html>
