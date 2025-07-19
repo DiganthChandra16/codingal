@@ -15,6 +15,35 @@
         document.getElementById("demo").innerHTML = fruits[2];
     </script>
 
-</body>
+    <h2>javascript objects</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit similique tempore? </p>
+    <pid="myjoin"></pid>
+    <p id="myfirstpop"></p>
+    <p id="mysecondpop"></p>
+    <script>
+        var fruits = ["apple", "banana", "orange"];
+        document.getElementById("myjoin").innerHTML = fruits.join(", ");
+        document.getElementById("myfirstpop").innerHTML = fruits.pop();
+        document.getElementById("mysecondpop").innerHTML = fruits.pop();
+    </script>
 
+    <h2>javascript arrays</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia enim velit explicabo?</p>
+    <p id="demo"></p>
+    <script>
+        function add(a,b){
+            return a + b;
+
+        }
+        function average(a,b){
+            return add(a,b)/2;
+        }
+        let result = average(5,10);
+        document.getElementById("demo").innerHTML = result;
+    </script>
+        
+
+        
+
+</body>
 </html>
