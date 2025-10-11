@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. At optio quod natus.</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non nulla enim nihil aut. Deleniti, dolorum.
+    </p>
+    <button ondblclick="ascending()">Ascending order</button>
+    <button ondblclick="descending()">Descending order</button>
+    <p id="demo"></p>
+    <script>
+        let numbers=[40,100,1,5,25,10];
+        document.getElementById("demo").innerHTML=numbers;
+
+        function ascending(){
+            numbers.sort(function(a,b){return a-b});
+            document.getElementById("demo").innerHTML=numbers;
+        }
+        function descending(){
+            numbers.sort(function(a,b){return b-a});
+            document.getElementById("demo").innerHTML=numbers;
+        }
+    </script>
+
+    
+    
+</body>
+</html>
