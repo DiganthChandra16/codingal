@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validateform() {
+        var x = document.forms["myform"]["fname"].value;
+        if (x == "") {
+            alert("name must be filled out");
+            return false;
+        }
+    }
+</script>
+<body>
+    <form name="myform" onsubmit="validateform()">
+        name: <input type="text" name="fname">
+        <input type="submit" value="submit">
+        <p id="demo"></p>
+    </form>"
+
+ <p>enter a age</p>
+    <input id="id1"type="age" min="18" max="65" required>
+    <button onclick="myfunction()">ok</button> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, laborum.</p>
+    <p id="result"></p>
+    <script>
+        function myfunction() {
+            var inpobj = document.getElementById("id1");
+            if (!inpobj.checkValidity()) {
+                document.getElementById("result").innerHTML = inpobj.validationMessage;
+            } else {
+                document.getElementById("result").innerHTML = "Input OK";
+            }
+        }
+    </script>
+
+    </body>
+</html>
