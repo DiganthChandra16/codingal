@@ -22,7 +22,7 @@ body {
 }
 
 #keyboard {
-    height: 400px;
+    height: 120px;
 }
 
 .operator,
@@ -58,3 +58,24 @@ body {
 .empty:focus {
     outline: 0;
 }
+button:nth-child(4) {
+    font-size: 20px;
+    background-color: #20b2aa;
+}
+button:nth-child(8):active {
+    font-size: 20px;
+    background-color: cadetblue;
+}
+button:nth-child(12) {
+    font-size: 20px;
+    background-color: #4eb220;
+}
+button:nth-child(16):active {
+    font-size: 20px;
+    background-color: #7d93e0;
+}
+button:nth-child(20) {
+    font-size: 20px;
+    background-color: #e0b73e;
+}
+
